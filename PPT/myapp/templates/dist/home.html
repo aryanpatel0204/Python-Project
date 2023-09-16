@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<a>HOME TEMPLATE</a>
+<div>
+    {% for i in XYZ %}
+        <h2>{{i.subject}} by {{i.faculty}}</h2>
+    {% endfor %}
+    <form action=" ">
+        Search For Movie:<input type="text" name="textbox">
+        <button type="submit">SEARCH</button>
+        {% for i in movies %}
+            {if searchTerm==movies.title}
+                <h3>{{i.desc}}</h3>
+            {% endif %}
+        {% endfor %}
+    </form>
+</div>
+{% endblock %}

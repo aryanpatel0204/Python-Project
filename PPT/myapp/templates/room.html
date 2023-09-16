@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+{% block content %}
+<a>ROOM TEMPLATE</a>
+<div>
+    {% for i in XZZ %}
+        <h2>{{i.subject}} by {{i.faculty}}</h2>
+    {% endfor %}
+</div>
+{% endblock %}
